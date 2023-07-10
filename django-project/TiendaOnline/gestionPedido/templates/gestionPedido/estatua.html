@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/estatua f.jpg">
+    <link rel="stylesheet" href="{% static 'gestionPedido/css/slider.css'%}">
+    <title>Esculturas</title>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Museo Cero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'index'%}">Página principal</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <center>
+        <h1></h1><font face="Comic Sans MS,arial"><font size=7>Catalogo</font></font></h1>
+    <section class="card"> 
+        <div class="container">
+            <div class="card" style="width: 25rem;">
+                <img src="{% static 'gestionPedido/img/PERSEO 8.jpg'%}" class="card-img-top" alt="Estatua">
+                <div class="card-body">
+                <h5 class="card-title">"Perseo con la testa di Medusa"</h5>
+                <p class="card-text">Figura del Gran General Estatua Medieval Caballero de Valor Traje de Armor </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Hecho en bronce</li>
+                <li class="list-group-item">Dimensiones 320cm x 520cm</li>
+                <li class="list-group-item">Año: 1554</li>
+                <li class="list-group-item">Autor: Benvenuto Cellini</li>
+                <li class="list-group-item">Valor: USD 123.582,41</li>
+                </ul>
+                <div class="card-body">
+                    <a href="estatua.html"><button type="button" class="btn btn-success">Comprar</button></a>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    </center>
+    <footer class="text-center py-3">
+        @Duoc uc Todos los derechos reservados
+    </footer>
+    
+</body>
+</html>

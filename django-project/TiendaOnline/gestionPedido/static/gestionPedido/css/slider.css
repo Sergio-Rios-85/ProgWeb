@@ -1,0 +1,105 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vh;
+    background: #c1cfd4;
+}
+
+.fondo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: relative;
+    display: flex; 
+    
+}
+
+.bubbles span {
+    position: relative ;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: #e5e7e5;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #e5e7e5, 0 0 100px #e5e7e5;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(100vh) scale(0);        
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);  
+    }
+
+}
+
+.carrusel-items{
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
+}
+
+.btn-outline-light{ 
+    
+    padding: 10px;
+}
+.carrusel-item1{
+    background-image: url("{% static/gestionPedido/img/galeria1x.jpg'%}");
+    min-width: 500px;
+    max-width: 500px;
+    height: 300px;
+    outline: 2px solid black;
+    
+}
+
+.carrusel-item2{
+    background-image: url("img/xxxx2.jpg");
+    min-width: 500px;
+    max-width: 500px;
+    height: 300px;
+    outline: 2px solid black;
+}
+
+.carrusel-item3{
+    background-image: url("img/galeria3x.jpg");
+    min-width: 500px;
+    max-width: 500px;
+    height: 300px;
+    outline: 2px solid black;
+}
+
+.carrusel-item1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item1:hover{
+    transform: scale(1.2);
+}
+.carrusel-item2:hover{
+    transform: scale(1.2);
+}
+.carrusel-item3:hover{
+    transform: scale(1.2);
+}
+

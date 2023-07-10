@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(221, 218, 215);
+}
+
+.informacion{
+
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.card{
+
+    text-align: justify;
+    margin: 2px;
+}
+footer{
+
+    background-color: white;
+}
+
+.museo_foto{
+    border: 3px;
+    margin: 20px 600px 300px 600px;
+    
+}
+
+.text-justify {
+    text-align: justify;
+    font-family: "Segoe UI";
+  }
+
+.titulo-cuadro{
+    font-family: "Segoe UI";
+}
